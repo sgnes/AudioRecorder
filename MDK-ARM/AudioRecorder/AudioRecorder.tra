@@ -1,0 +1,43 @@
+*** Creating Trace Output File 'AudioRecorder\AudioRecorder.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"audiorecorder\startup_stm32f407xx.o"'
+### List of Objects: adding '"audiorecorder\main.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_it.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_msp.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_adc.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_adc_ex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_rcc.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_rcc_ex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_flash.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_flash_ex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_flash_ramfunc.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_gpio.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_dma_ex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_dma.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_pwr.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_pwr_ex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_cortex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_exti.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_crc.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_tim.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_tim_ex.o"'
+### List of Objects: adding '"audiorecorder\stm32f4xx_hal_uart.o"'
+### List of Objects: adding '"audiorecorder\system_stm32f4xx.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp "audiorecorder\startup_stm32f407xx.o" "audiorecorder\main.o" "audiorecorder\stm32f4xx_it.o" "audiorecorder\stm32f4xx_hal_msp.o" "audiorecorder\stm32f4xx_hal_adc.o" "audiorecorder\stm32f4xx_hal_adc_ex.o" "audiorecorder\stm32f4xx_hal_rcc.o" "audiorecorder\stm32f4xx_hal_rcc_ex.o" "audiorecorder\stm32f4xx_hal_flash.o" "audiorecorder\stm32f4xx_hal_flash_ex.o" "audiorecorder\stm32f4xx_hal_flash_ramfunc.o" "audiorecorder\stm32f4xx_hal_gpio.o" "audiorecorder\stm32f4xx_hal_dma_ex.o" "audiorecorder\stm32f4xx_hal_dma.o" "audiorecorder\stm32f4xx_hal_pwr.o" "audiorecorder\stm32f4xx_hal_pwr_ex.o" "audiorecorder\stm32f4xx_hal_cortex.o" "audiorecorder\stm32f4xx_hal.o" "audiorecorder\stm32f4xx_hal_exti.o" "audiorecorder\stm32f4xx_hal_crc.o" "audiorecorder\stm32f4xx_hal_tim.o" "audiorecorder\stm32f4xx_hal_tim_ex.o" "audiorecorder\stm32f4xx_hal_uart.o" "audiorecorder\system_stm32f4xx.o" 
+--library_type=microlib --strict --scatter "AudioRecorder\AudioRecorder.sct" 
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "AudioRecorder.map" -o AudioRecorder\AudioRecorder.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'AudioRecorder\AudioRecorder.axf'
+### ADS-LD Command File: 'AudioRecorder\AudioRecorder.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'AudioRecorder\AudioRecorder.lnp', Handle=0x00000E04
+### Writing '.lnp' file
+### ADS-LD Command file 'AudioRecorder\AudioRecorder.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
