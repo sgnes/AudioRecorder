@@ -205,7 +205,9 @@ void SysTick_Handler(void)
   */
 void TIM2_IRQHandler(void)
 {
+  extern ADC_HandleTypeDef hadc1;
   /* USER CODE BEGIN TIM2_IRQn 0 */
+  HAL_ADC_Start(&hadc1);
   HAL_GPIO_TogglePin(GPIOA, 1<<6);
   HAL_GPIO_TogglePin(GPIOA, 1<<7);
   /* USER CODE END TIM2_IRQn 0 */
