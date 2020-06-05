@@ -4,12 +4,13 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 D:\repo\AudioRecorder\AudioRecorder\MDK-ARM\AudioRecorder.uvproj
-Project File Date:  04/28/2020
+Project File Date:  06/05/2020
 
 <h2>Output:</h2>
 Build target 'AudioRecorder'
 assembling startup_stm32f407xx.s...
 compiling main.c...
+compiling pdm2pcm.c...
 compiling stm32f4xx_it.c...
 compiling stm32f4xx_hal_msp.c...
 compiling stm32f4xx_hal_adc.c...
@@ -33,6 +34,249 @@ compiling stm32f4xx_hal_tim_ex.c...
 compiling stm32f4xx_hal_uart.c...
 compiling system_stm32f4xx.c...
 linking...
-Program Size: Code=6552 RO-data=456 RW-data=24 ZI-data=1320  
+Program Size: Code=18864 RO-data=776 RW-data=1064 ZI-data=1464  
 FromELF: creating hex file...
 "AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Build target 'AudioRecorder'
+compiling stm32f4xx_it.c...
+linking...
+Program Size: Code=18896 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Build target 'AudioRecorder'
+linking...
+Program Size: Code=18896 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18912 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling stm32f4xx_it.c...
+linking...
+Program Size: Code=18912 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+../Src/main.c(123): error:  #260-D: explicit type is missing ("int" assumed)
+../Src/main.c(125): error:  #20: identifier "locidx" is undefined
+Target not created
+Build target 'AudioRecorder'
+compiling main.c...
+../Src/main.c(125): error:  #20: identifier "locidx" is undefined
+Target not created
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18940 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Failed!
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18944 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Failed!
+Internal command error
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18972 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18976 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+compiling stm32f4xx_it.c...
+linking...
+Program Size: Code=18976 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18976 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18976 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+../Src/main.c(122): error:  #20: identifier "uint32" is undefined
+compiling stm32f4xx_it.c...
+Target not created
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18944 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18944 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18944 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Build target 'AudioRecorder'
+linking...
+Program Size: Code=18944 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+compiling stm32f4xx_it.c...
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Build target 'AudioRecorder'
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'AudioRecorder'
+compiling main.c...
+linking...
+Program Size: Code=18952 RO-data=776 RW-data=1064 ZI-data=1464  
+FromELF: creating hex file...
+"AudioRecorder\AudioRecorder.axf" - 0 Error(s), 0 Warning(s).
+Load "AudioRecorder\\AudioRecorder.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
