@@ -68,11 +68,66 @@ static void MX_UART4_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
-
+static void DMA_Config(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+/**
+  * @brief  Configure the DMA controller according to the Stream parameters
+  *         defined in main.h file
+  * @note  This function is used to :
+  *        -1- Enable DMA2 clock
+  *        -2- Select the DMA functional Parameters
+  *        -3- Select the DMA instance to be used for the transfer
+  *        -4- Select Callbacks functions called after Transfer complete and 
+               Transfer error interrupt detection
+  *        -5- Initialize the DMA stream
+  *        -6- Configure NVIC for DMA transfer complete/error interrupts
+  *        -7- Start the DMA transfer using the interrupt mode
+  * @param  None
+  * @retval None
+  */
+static void DMA_Config(void)
+{   
+  /*## -1- Enable DMA2 clock #################################################*/
+
+  /*##-2- Select the DMA functional Parameters ###############################*/
+  hdma_adc1.Init.Channel = DMA_CHANNEL;                     /* DMA_CHANNEL_0                    */
+  hdma_adc1.Init.Direction = DMA_PERIPH_TO_MEMORY;          /* M2M transfer mode                */
+  hdma_adc1.Init.PeriphInc = DMA_PINC_DISABLE;               /* Peripheral increment mode Enable */
+  hdma_adc1.Init.MemInc = DMA_MINC_DISABLE;                  /* Memory increment mode Enable     */
+  hdma_adc1.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD; /* Peripheral data alignment : Word */
+  hdma_adc1.Init.MemDataAlignment = DMA_PDATAALIGN_HALFWORD;    /* memory data alignment : Word     */
+  hdma_adc1.Init.Mode = DMA_NORMAL;                         /* Normal DMA mode                  */
+  hdma_adc1.Init.Priority = DMA_PRIORITY_HIGH;              /* priority level : high            */
+  hdma_adc1.Init.FIFOMode = DMA_FIFOMODE_DISABLE;            /* FIFO mode enabled                */
+  hdma_adc1.Init.MemBurst = DMA_MBURST_SINGLE;              /* Memory burst                     */
+  hdma_adc1.Init.PeriphBurst = DMA_PBURST_SINGLE;           /* Peripheral burst                 */
+
+  /*##-3- Select the DMA instance to be used for the transfer : DMA2_Stream0 #*/
+  hdma_adc1.Instance = DMA_STREAM;
+
+  /*##-4- Initialize the DMA stream ##########################################*/
+  if(HAL_DMA_Init(&hdma_adc1) != HAL_OK)
+  {
+    /* Initialization Error */
+    Error_Handler();  
+  }
+
+  /*##-5- Select Callbacks functions called after Transfer complete and Transfer error */
+  HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_CPLT_CB_ID, TransferComplete);
+  HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_ERROR_CB_ID, TransferError);
+
+  /*##-7- Start the DMA transfer using the interrupt mode ####################*/
+  /* Configure the source, destination and buffer size DMA fields and Start DMA Stream transfer */
+  /* Enable All the DMA interrupts */
+  if(HAL_DMA_Start_IT(&hdma_adc1, (uint32_t)&ADC1, (uint32_t)&aDST_Buffer, BUFFER_SIZE) != HAL_OK)
+  {
+    /* Transfer Error */
+    Error_Handler();  
+  }           
+}
 
 /* USER CODE END 0 */
 

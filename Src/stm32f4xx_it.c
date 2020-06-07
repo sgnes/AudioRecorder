@@ -23,6 +23,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stm32f407xx.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +43,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-
+uint32_t TIM2_IrqCnt=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -234,6 +235,7 @@ void TIM1_CC_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
+  TIM2_IrqCnt++;
   HAL_GPIO_TogglePin(GPIOA, 1<<6);
   HAL_GPIO_TogglePin(GPIOA, 1<<7);
   /* USER CODE END TIM2_IRQn 0 */
