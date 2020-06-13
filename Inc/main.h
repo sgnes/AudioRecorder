@@ -62,6 +62,11 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 /* USER CODE BEGIN Private defines */
 
+#define DMA_STREAM               DMA2_Stream0
+#define DMA_CHANNEL              DMA_CHANNEL_0 
+#define DMA_STREAM_IRQ           DMA2_Stream0_IRQn
+#define DMA_STREAM_IRQHANDLER    DMA2_Stream0_IRQHandler
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
